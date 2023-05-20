@@ -2,7 +2,7 @@
 
 Dictionary App fue basada en [FrontEndMentor.io premium challenge](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL), yo no tengo el premium, pero usando las imagenes me guié para hacerla, también me basé en unas caracteristicas agregadas por [matiasbaldanza](https://github.com/matiasbaldanza/dictionary-app) en su proyecto.
 
-> 👷‍♂️ Actualmente está en desarrollo me falta terminar ciertas cosas
+> 👷‍♂️ Actualmente está en desarrollo, me falta terminar ciertas cosas
 > 
 
 ## Live demo
