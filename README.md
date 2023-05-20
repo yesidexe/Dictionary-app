@@ -25,3 +25,7 @@ Dictionary App fue basada en [FrontEndMentor.io premium challenge](https://www.f
 - [ ]  Dark/Light theme
 - [ ]  Language Variant selector (UK/US) for pronunciation.
 - [ ]  Font selector (serif/sans serif + font size)
+
+## Project image
+
+![project image](./docs/project-image.png)
