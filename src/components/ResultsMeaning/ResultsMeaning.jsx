@@ -6,15 +6,15 @@ function ResultsMeaning() {
     const {status, data} = React.useContext(DictionaryContext)
 
     return (
-        <div className="flex flex-col w-full px-3">
+        <div className="flex flex-col w-full px-3 mb-6">
             <PartOfSpeech/>
             {status === "success" &&
-                <div className="flex lg:gap-5 md:gap-5 gap-4 mb-3 items-center w-full">
-                    <p className="md:text-lg lg:text-lg text-gray-400 underline underline-offset-2">Source</p>
-                    <a href={data.sourceUrls}
+                <div className="mt-6 flex lg:flex-row md:flex-row flex-col lg:gap-5 md:gap-5 mb-3 lg:items-center md:items-center w-full">
+                    <p className="dark:text-slate-600 md:text-lg lg:text-lg text-sm text-gray-400 underline underline-offset-2">Source</p>
+                    <a href={data.sourceUrls[0]}
                         target="_blank"
-                        className="lg:text-base md:text-base text-xs text-gray-400 underline underline-offset-2">
-                        {data.sourceUrls}                         
+                        className="dark:text-slate-600 lg:text-base md:text-base text-xs text-gray-400 underline underline-offset-2">
+                        {data.sourceUrls[0]}                         
                     </a>
                 </div>
             }
