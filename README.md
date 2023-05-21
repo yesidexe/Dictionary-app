@@ -19,12 +19,13 @@ Dictionary App fue basada en [FrontEndMentor.io premium challenge](https://www.f
 
 ## Features
 
-- [ ]  Responsive layout (mobile/tablet/desktop)
+- [x]  Responsive layout (mobile/tablet/desktop)
 - [x]  Fetches the free Dictionary API
-- [ ]  Plays pronunciation
-- [ ]  Dark/Light theme
+- [x]  Plays pronunciation (solo USA)
+- [x]  Dark/Light theme
 - [ ]  Language Variant selector (UK/US) for pronunciation.
-- [ ]  Font selector (serif/sans serif + font size)
+- [x]  Font selector (serif/sans serif + font size)
+- [x]  useContext
 
 ## Project image
 
