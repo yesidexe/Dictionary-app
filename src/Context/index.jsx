@@ -1,5 +1,5 @@
 import React from "react";
-import {fetchData} from '../Services/fetchData' 
+import {fetchData} from '../Services/fetchData.js' 
 
 const DictionaryContext = React.createContext();
 
