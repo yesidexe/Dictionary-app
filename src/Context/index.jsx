@@ -9,7 +9,7 @@ function DictionaryProvider({ children }) {
     const [font, setFont] = React.useState('font-mono')
     const [darkMode, setDarkMode] = React.useState(false)
 
-    const API = import.meta.env.VITE_DICTIONARY_API
+    const API = 'https://api.dictionaryapi.dev/api/v2/entries/en'
 
     const handleSearch = async (searchTerm) => {
         setStatus('loading')
