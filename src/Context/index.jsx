@@ -1,5 +1,5 @@
 import React from "react";
-import {fetchData} from '../Services/fetchData.js' 
+import {fetchData} from '../services/fetchData'
 
 const DictionaryContext = React.createContext();
 
@@ -20,6 +20,7 @@ function DictionaryProvider({ children }) {
                 setStatus('success')
             } else {
                 setStatus('error')
+                throw new Error('Algo salió mal')                
             }
         } catch (error) {
             console.error(error)

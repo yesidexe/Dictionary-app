@@ -49,7 +49,7 @@ function PartOfSpeech() {
                                         const antonymId = `${index}-antonym`
 
                                         return(
-                                            <span key={antonymId} className="dark:text-rose-600 text-lg text-rose-800">
+                                            <span key={antonymId} className="dark:text-rose-600 lg:text-lg md:text-lg text-rose-800">
                                                 {antonym}
                                             </span>
                                         )
