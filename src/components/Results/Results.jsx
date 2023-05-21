@@ -1,12 +1,12 @@
 import ResultWord from "../ResultWord/ResultWord";
 import ResultsMeaning from "../ResultsMeaning/ResultsMeaning";
 
-function Results({data, status}) {
+function Results() {
     
     return (
         <>
-            <ResultWord data={data} status={status}></ResultWord>
-            <ResultsMeaning data={data} status={status}></ResultsMeaning>            
+            <ResultWord/>
+            <ResultsMeaning/>            
         </>        
     );
 }

@@ -1,18 +1,35 @@
-function ResultWord({ data, status }) {
+import React from "react";
+import { DictionaryContext } from "../../Context";
+import AudioPlayer from "../AudioPlayer/AudioPlayer";
+import { Error } from "../Icons/Icons";
+function ResultWord() {
+    const { status, data } = React.useContext(DictionaryContext)
+    const audioUrl = status === 'success' && data?.phonetics[0]?.audio
+
 
     return (
         <>
-            {status === "success" &&
+            {
+                status === 'success' &&
                 <div className="flex justify-between px-6 items-center mb-6">
                     <div>
-                        <h2 className="text-5xl font-semibold mb-6">{data.word}</h2>
-                        <p className="text-rose-900 text-xl">{data.phonetic}</p>
+                        <h2 className="dark:text-slate-100 lg:text-5xl md:text-5xl text-4xl  font-semibold">{data.word}</h2>
+                        {
+                            data.phonetic &&
+                            <p className="mt-6 dark:text-rose-500 text-rose-900 lg:text-xl md:text-xl text-lg">{data.phonetic}</p>
+                        }                            
                     </div>
-                    <button className="w-16 h-16 grid place-content-center bg-rose-400 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                        </svg>
-                    </button>
+                    {audioUrl && <AudioPlayer audioUrl={audioUrl} />}
+                </div>
+            }
+            {
+                status === 'error' &&
+                <div className='flex flex-col items-center gap-5'>
+                    <h2 
+                    className="dark:text-slate-100 flex gap-5 lg:text-xl md:text-xl">
+                        No Definitions Found <Error/>
+                    </h2>
+                    <p className="text-center dark:text-slate-100 lg:text-base md:text-base text-xs">You can try the search again at later time or head to the web instead.</p>
                 </div>
             }
         </>
