@@ -7,7 +7,8 @@ Dictionary App fue basada en [FrontEndMentor.io premium challenge](https://www.f
 
 ## Live demo
 
-> Cuando la terminexd
+> Me faltan unas cosas pero por ahora se puede ver
+> https://yesidexe.github.io/Dictionary-app/
 > 
 
 ## **Technologies/resources**
